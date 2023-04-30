@@ -5,7 +5,7 @@
 
             <div class="intro">
               <div class="video">
-                <video class="video__media video__desc" src="@/img/video.mp4"
+                <video class="video__media video__desc" src="@/assets/img/video.mp4"
                  autoplay muted loop></video>
                 <div class="video__media img-media-main"></div>
               </div>
@@ -97,7 +97,6 @@ export default {
     }, (1600));
     setTimeout(() => {
       document.querySelector('.intro').style.left = '0px';
-      document.body.style.overflow = 'auto';
     }, (200));
 
     setTimeout(() => {
@@ -137,7 +136,8 @@ export default {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(23, 37, 31, 0.521);
+    background: linear-gradient(to bottom, rgba(0,0,30,0.7) 0%,
+    rgba(0,0,30,0.45) 15%,rgba(0,0,30,0.5) 85%,rgba(0,0,30,0.75) 100%);
 
     position: absolute;
     top: 0;
@@ -218,7 +218,17 @@ export default {
     color: #fff;
     text-align: center;
 }
-
+.shadow-intro {
+    position: absolute;
+    top: 0px;
+    width: 9px;
+    left: 160vw;
+    height: 80vh;
+    z-index: 20;
+    transition: left 1.5s;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 140px 0px 80px 40px rgba(255, 255, 255, 0.253);
+}
 .container {
     width: 100%;
     max-width: 1200px;
@@ -279,7 +289,7 @@ opacity: 0;
   display: block;
   width: 100%;
   height: 100%;
-  background: url('@/img/kombayn.jpg') no-repeat center center;
+  background: url('@/assets/img/kombayn.jpg') no-repeat center center;
   background-size: cover;
 }
 

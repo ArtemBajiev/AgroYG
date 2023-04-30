@@ -5,7 +5,7 @@
             <li class="menu-bottom__link-item"><router-link to="/">О компании</router-link></li>
             <li class="menu-bottom__link-item"><router-link to="/corn">Кукуруза</router-link></li>
             <li class="menu-bottom__link-item"><router-link to="/wheat">Пшеница</router-link></li>
-            <li class="menu-bottom__link-item"><router-link to="">Контакты</router-link></li>
+            <li class="menu-bottom__link-item"><router-link to="/contact">Контакты</router-link></li>
         </ul>
     </nav>
 </template>

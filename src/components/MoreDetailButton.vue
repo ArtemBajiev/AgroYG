@@ -12,7 +12,7 @@ export default {
 <style>
 .more-detailed-button_plus
 {
-  background-image: url("../img/plus.svg");
+  background-image: url("@/assets/img/plus.svg");
   width: 30px;
   height: 30px;
   background-position: center;

@@ -83,7 +83,6 @@ export default {
     }, 1600);
     setTimeout(() => {
       document.querySelector('.intro').style.left = '0px';
-      document.body.style.overflow = 'auto';
     }, 200);
 
     setTimeout(() => {
@@ -109,7 +108,7 @@ export default {
 {
   width: 100%;
   height: 100%;
-  background: url('@/img/kukuruza.jpg') no-repeat center center;
+  background: url('@/assets/img/kukuruza.jpg') no-repeat center center;
   background-size: cover;
 }
 </style>

@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import VideoMainPage from '@/views/VideoMainPage.vue';
 import CornPage from '@/views/CornPage.vue';
 import WheatPage from '@/views/WheatPage.vue';
+import ContactPage from '@/views/ContactPage.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/wheat',
     name: 'WheatPage',
     component: WheatPage,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactPage,
   },
 ];
 

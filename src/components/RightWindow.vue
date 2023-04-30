@@ -5,7 +5,7 @@
     <div class="left-window__container" @click="this.$emit('CloseWindow')"><div class="close-window-img"></div></div>
     <div class="right-window__container">
       <div class="more-detailed-top">
-        <div class="close-wind-mob"  @click="this.$emit('CloseWindow')"><img src="@/img/plusBlack.svg" class="plus-black" alt=""></div>
+        <div class="close-wind-mob"  @click="this.$emit('CloseWindow')"><img src="@/assets/img/plusBlack.svg" class="plus-black" alt=""></div>
         <h2><slot name="header"></slot></h2>
         <p class="about-text">
           <slot name="text"></slot>
@@ -59,7 +59,7 @@ export default {};
 }
 .close-window-img
 {
-    background-image: url('@/img/exit.svg');
+    background-image: url('@/assets/img/exit.svg');
     height: 30px;
     width: 30px;
     background-position: center;
@@ -119,6 +119,15 @@ export default {};
   position: absolute;
   right: 10px;
   top: 10px;
+}
+.right-window__link
+{
+  color: #3a4052;
+  font-weight: 500;
+}
+.right-window__link:hover
+{
+  color: #6e6e6e;
 }
 @media (max-width: 812px){
   .plus-black

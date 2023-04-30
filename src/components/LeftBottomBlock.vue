@@ -55,7 +55,7 @@ opacity: 0;
 
 /* anim btn */
 .anim-bottom-btn-enter-from{
-transform: translateY(70px);
+transform: translateY(50px);
 opacity: 0;
 }
 .anim-bottom-btn-enter-active{
@@ -74,7 +74,7 @@ opacity: 0;
   transition: all 1s cubic-bezier(0.525, 0.900, 0.490, 0.960);
 }
 .anim-bottom-btn-leave-to{
-  transform: translateY(70px);
+  transform: translateY(50px);
   opacity: 0;
 }
 </style>
