@@ -1,11 +1,9 @@
 <template>
   <div class="overflow-hidden">
-    <router-view v-slot="{ Component }">
       <transition name="anim-page" mode="out-in">
-        <component :is="Component" />
+        <router-view></router-view>
       </transition>
-    </router-view>
-  </div>
+      </div>
 </template>
 <script>
 export default {};
